@@ -18,7 +18,7 @@ function getIP() {
             }
         }
     }
-    return 'localhost'; // Valeur par défaut si aucune IP non interne n'est trouvée
+    return process.env.IP; // Valeur par défaut si aucune IP non interne n'est trouvée
 }
 
 // Récupère l'IP automatiquement
